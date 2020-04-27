@@ -1,0 +1,28 @@
+@mixin clearFix {
+  margin: 0 auto;
+  display: block;
+  content: "";
+  clear: both;
+}
+
+.sign-in-and-sign-up {
+  &-header {
+    text-align: center;
+    margin-bottom: 4rem;
+    font-size: 3rem;
+    letter-spacing: 0.2rem;
+  }
+  .row {
+    width: 114rem;
+    @include clearFix;
+
+    .col-1-2 {
+      width: calc((100% - 8rem) / 2);
+      float: left;
+
+      &:not(:last-child) {
+        margin-right: 8rem;
+      }
+    }
+  }
+}

@@ -1,0 +1,22 @@
+.sign-in {
+  &-header {
+    font-size: 2rem;
+    margin-bottom: 5rem;
+  }
+  &-btn {
+    font-weight: bold;
+    padding: 1rem 3rem;
+    border: none;
+    color: #000;
+    background-color: rgba(#dcdde1, 0.8);
+
+    &:hover {
+      background-color: rgba(#000000, 1);
+      color: #fff;
+    }
+  }
+  &-button {
+    display: flex;
+    justify-content: space-between;
+  }
+}

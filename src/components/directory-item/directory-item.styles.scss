@@ -1,0 +1,37 @@
+.directory-item {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+
+  &-img {
+    width: 100%;
+    height: 100%;
+    transition: transform 3s linear;
+
+    &-img {
+      width: 100%;
+      height: 100%;
+    }
+
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
+
+  &-detail {
+    background-color: rgba(#ffffff, 0.5);
+    text-align: center;
+    font-size: 1.8rem;
+    font-weight: bold;
+    border: 0.1rem solid #000;
+    width: 15rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+  }
+}

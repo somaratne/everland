@@ -1,0 +1,23 @@
+.drop-down {
+  position: relative;
+  width: 25rem;
+  height: 30rem;
+  border: 0.1rem solid #000;
+  overflow-y: auto;
+
+  &-btn {
+    padding: 1rem 6rem;
+    border: none;
+    columns: #000;
+    font-weight: bold;
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%, -90%);
+
+    // &:hover {
+    //   background-color: rgba(#000, 1);
+    //   color: #fff;
+    // }
+  }
+}
