@@ -10,6 +10,7 @@ import {
   increaseCartItem,
   decreaseCartItem,
 } from "./../../redux/cart-reducer/cart-action";
+import StripeCheckoutButton from "../../components/stripe-button/stripe-button.component";
 import "./checkout.styles.scss";
 
 const CheckOut = ({
@@ -48,6 +49,7 @@ const CheckOut = ({
         {cartItems.length !== 0 ? (
           <h3 className="checkout-total">Total Price : ${totalPrice}</h3>
         ) : null}
+        <StripeCheckoutButton price={totalPrice} />
       </div>
     </div>
   );
